@@ -1,0 +1,24 @@
+body {
+  position: relative; // Needed for scrollspy
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.type-effect-hidden {
+  display: none; // This attribute will be set by jQuery's fadeIn() method after the type animation completes
+}
+
+.img-grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.img-grayscale:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}

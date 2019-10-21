@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# dist
+dist/
+
+# vendor
+src/fonts/
+src/css/
+src/js/vendor/
+src/scss/bootstrap/
+
+# misc
+.DS_Store

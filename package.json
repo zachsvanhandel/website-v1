@@ -3,7 +3,8 @@
     "name": "website-v1",
     "version": "1.0.0",
     "scripts": {
-        "start": "gulp dev"
+        "start": "gulp dev",
+        "deploy": "gulp deploy"
     },
     "description": "The first iteration of my personal website.",
     "keywords": [
@@ -27,7 +28,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/zachsvanhandel/zachsvanhandel.github.io/"
+        "url": "https://github.com/zachsvanhandel/website-v1/"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.11.2",

@@ -41,7 +41,7 @@ Changes made to *`.html`*, *`.js`*, or *`.scss`* files within the *`src/`* direc
 ### Deploy to GitHub Pages
 The website can be deployed to GitHub Pages by running the following command:
 ```
-$ gulp deploy
+$ npm run deploy
 ```
 
 Note that this command will attempt to publish the contents of the *`dist/`* directory to the repository and branch specified in the `publish()` function of *`gulpfile.js`*. To change the repository the command publishes to, update the `repo` option specified in that function.
@@ -52,7 +52,7 @@ Note that this command will attempt to publish the contents of the *`dist/`* dir
 * `gulp vendor` task to move files from *`node_modules/`* into appropriate directories
 * `gulp build` task to build the project (same as `gulp`)
 * `gulp dev` task to build the project and open a live preview in the browser that dynamically reloads when changes are made to *`.html`*, *`.js`*, or *`.scss`* files within the *`src/`* directory (same as `npm start`)
-* `gulp deploy` task to build the project and deploy it to a GitHub Pages repository (same as `npm deploy`)
+* `gulp deploy` task to build the project and deploy it to a GitHub Pages repository (same as `npm run deploy`)
 
 ## License
 Copyright 2019 Zach Van Handel. Code released under the [MIT](LICENSE.md) license.

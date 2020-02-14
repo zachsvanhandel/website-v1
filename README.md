@@ -7,31 +7,31 @@ The first iteration of my personal website, which I designed and built completel
 #### Node.js
 The project requires [Node.js](https://nodejs.org/) version 10 or higher. To check your current version of Node.js, run the following command:
 ```
-$ node -v
+node -v
 ```
 
 #### npm
 The project also requires [npm](https://www.npmjs.com/) version 6 or higher. To check your current version of npm, run the following command:
 ```
-$ npm -v
+npm -v
 ```
 
 ### Cloning the repository
 To clone the project, navigate to the directory where you would like it to be saved and run the following command:
 ```
-$ git clone https://github.com/zachsvanhandel/website-v1.git
+git clone https://github.com/zachsvanhandel/website-v1.git
 ```
 
 ### Building and running the project
 The project uses npm, a package manager for Node.js, to manage dependencies for the project. To install all of the packages needed to run the project, execute the following commands:
 ```
-$ cd website-v1/
-$ npm install
+cd website-v1/
+npm install
 ```
 
 Once all packages have been installed by npm, a live preview of the website can be launched in the browser by executing the following command from the top-level directory of the project:
 ```
-$ npm start
+npm start
 ```
 
 Changes made to *`.html`*, *`.js`*, or *`.scss`* files within the *`src/`* directory will cause the page to dynamically reload in the browser.
@@ -41,7 +41,7 @@ Changes made to *`.html`*, *`.js`*, or *`.scss`* files within the *`src/`* direc
 ### Deploy to GitHub Pages
 The website can be deployed to GitHub Pages by running the following command:
 ```
-$ npm run deploy
+npm run deploy
 ```
 
 Note that this command will attempt to publish the contents of the *`dist/`* directory to the repository and branch specified in the `publish()` function of *`gulpfile.js`*. To change the repository the command publishes to, update the `repo` option specified in that function.

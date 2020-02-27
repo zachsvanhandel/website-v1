@@ -40,7 +40,8 @@ function vendorFonts() {
 
 function vendorJs() {
     var bootstrap = gulp.src([
-        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map'
     ])
         .pipe(gulp.dest('src/js/vendor/'));
 
@@ -55,7 +56,8 @@ function vendorJs() {
         .pipe(gulp.dest('src/js/vendor/'));
 
     var popper = gulp.src([
-        'node_modules/popper.js/dist/umd/popper.min.js'
+        'node_modules/popper.js/dist/umd/popper.min.js',
+        'node_modules/popper.js/dist/umd/popper.min.js.map'
     ])
         .pipe(gulp.dest('src/js/vendor/'));
 

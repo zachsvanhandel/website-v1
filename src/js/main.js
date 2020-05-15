@@ -27,7 +27,6 @@
         'a team player',
         'a leader',
         'an innovator',
-        'a student',
         'an engineer'
     ];
     var randomAttributes = attributes.sort(function () { return 0.5 - Math.random() });

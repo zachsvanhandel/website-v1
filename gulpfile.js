@@ -6,7 +6,7 @@ const cleanCss = require('gulp-clean-css');
 const del = require('del');
 const githubPages = require('gh-pages');
 const gulp = require('gulp');
-const htmlreplace = require('gulp-html-replace');
+const inject = require('gulp-inject');
 const merge = require('merge-stream');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
@@ -120,14 +120,19 @@ function js() {
 }
 
 function html() {
+    var theme = gulp.src(['dist/css/theme.min.css']);
+    var css = gulp.src(['dist/css/*.min.css', '!dist/css/theme.min.css']);
+    var js = gulp.src(['dist/js/*.min.js']);
+
+    const options = { relative: true, removeTags: true };
+
     return gulp.src([
         'src/*.html'
     ])
-        .pipe(htmlreplace({
-            'js': 'js/main.min.js',
-            'css': 'css/main.min.css',
-            'theme': 'css/theme.min.css'
-        }))
+        .pipe(gulp.dest('dist/'))
+        .pipe(inject(theme, { name: 'theme', ...options }))
+        .pipe(inject(css, options))
+        .pipe(inject(js, options))
         .pipe(gulp.dest('dist/'));
 }
 

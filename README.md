@@ -55,4 +55,4 @@ Note that this command will attempt to publish the contents of the *`dist/`* dir
 * `gulp deploy` task to build the project and deploy it to a GitHub Pages repository (same as `npm run deploy`)
 
 ## License
-Copyright 2019 Zach Van Handel. Code released under the [MIT](LICENSE.md) license.
+Copyright 2020 Zach Van Handel. Code released under the [MIT](LICENSE.md) license.

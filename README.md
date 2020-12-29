@@ -1,5 +1,7 @@
 # Website v1
-The first iteration of my personal website, which I designed and built completely from scratch. The website was created with [Bootstrap 4](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [TypeIt](https://typeitjs.com/), and [clipboard.js](https://clipboardjs.com/). It uses [Gulp 4](https://gulpjs.com/) as a build system.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a908fc24-a5ba-479a-bb20-c5883559850b/deploy-status)](https://app.netlify.com/sites/zachsvanhandel-v1/deploys)
+
+The first iteration of my personal website, which I designed and built completely from scratch. The website was created with [Bootstrap 4](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [TypeIt](https://typeitjs.com/), and [clipboard.js](https://clipboardjs.com/). It uses [Gulp 4](https://gulpjs.com/) as a build system and is hosted on [Netlify](https://www.netlify.com/).
 
 ## Getting Started
 ### Requirements

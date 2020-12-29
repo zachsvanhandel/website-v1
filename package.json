@@ -4,14 +4,13 @@
     "version": "1.0.0",
     "scripts": {
         "start": "gulp dev",
-        "deploy": "gulp deploy"
+        "build": "gulp build"
     },
     "description": "The first iteration of my personal website.",
     "keywords": [
         "gulp",
         "bootstrap",
         "browsersync",
-        "github-pages",
         "clipboard-js",
         "typeit",
         "fontawesome"
@@ -41,7 +40,6 @@
     "devDependencies": {
         "browser-sync": "^2.26.13",
         "del": "^3.0.0",
-        "gh-pages": "^2.1.1",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-clean-css": "^4.2.0",

@@ -4,7 +4,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const cleanCss = require('gulp-clean-css');
 const del = require('del');
-const githubPages = require('gh-pages');
 const gulp = require('gulp');
 const inject = require('gulp-inject');
 const merge = require('merge-stream');
@@ -169,23 +168,13 @@ function watch() {
     gulp.watch(['src/*.html'], gulp.series(html, reload));
 }
 
-function publish(done) {
-    githubPages.publish('dist/', {
-        branch: 'master',
-        message: 'Auto-generated commit',
-        repo: 'https://github.com/zachsvanhandel/zachsvanhandel.github.io.git'
-    }, done);
-}
-
 const vendor = gulp.series(clean, gulp.parallel(vendorFonts, vendorJs, vendorScss));
 const build = gulp.series(vendor, scss, gulp.parallel(css, js), html, copyToDist);
 const dev = gulp.series(build, gulp.parallel(serve, watch));
-const deploy = gulp.series(build, publish);
 
 exports.clean = clean;
 exports.vendor = vendor;
 exports.build = build;
 exports.dev = dev;
-exports.deploy = deploy;
 
 exports.default = build;
